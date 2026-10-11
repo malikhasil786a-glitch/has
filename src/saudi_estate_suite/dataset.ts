@@ -1,3 +1,14 @@
+import jeddahHeroTruckImg from '../assets/images/jeddah_modern_3d_hero_1791684159311.jpg';
+import furnitureMattressHaulImg from '../assets/images/jeddah_luxury_villa_salon_haul_1791684167973.jpg';
+import applianceAcRemovalImg from '../assets/images/jeddah_smart_appliance_ac_haul_1791684177222.jpg';
+import rooftopGarageCleanoutImg from '../assets/images/jeddah_rooftop_terrace_cleanout_1791684188543.jpg';
+import jeddahPenthouseDebrisImg from '../assets/images/jeddah_penthouse_renovation_1791682649664.jpg';
+import commercialOfficeClearImg from '../assets/images/jeddah_corniche_office_tower_1791684199865.jpg';
+import recyclingCenterImg from '../assets/images/vision_2030_circular_facility_1791682660217.jpg';
+import majlisWhiteGloveImg from '../assets/images/white_glove_majlis_clearance_1791682626425.jpg';
+import daylightDynaTruckImg from '../assets/images/jeddah_junk_removal_hero_1791683406052.jpg';
+import daylightSofaHaulImg from '../assets/images/jeddah_furniture_mattress_haul_1791683416167.jpg';
+
 export type PageId =
   | 'home'
   | 'furniture-mattress'
@@ -12,6 +23,7 @@ export type PageId =
 
 export type Lang = 'en' | 'ar';
 
+export const COMPANY_NAME = 'Jeddah Junk Removal';
 export const JEDDAH_PHONE_LOCAL = '0575771358';
 export const JEDDAH_PHONE_DISPLAY = '057 577 1358';
 export const JEDDAH_PHONE_INTL = '+966 57 577 1358';
@@ -27,16 +39,16 @@ export const buildWhatsAppLink = (message?: string): string => {
 };
 
 export const GENERATED_IMAGES = {
-  jeddahHeroTruck: '/src/assets/images/jeddah_modern_3d_hero_1791684159311.jpg',
-  furnitureMattressHaul: '/src/assets/images/jeddah_luxury_villa_salon_haul_1791684167973.jpg',
-  applianceAcRemoval: '/src/assets/images/jeddah_smart_appliance_ac_haul_1791684177222.jpg',
-  rooftopGarageCleanout: '/src/assets/images/jeddah_rooftop_terrace_cleanout_1791684188543.jpg',
-  jeddahPenthouseDebris: '/src/assets/images/jeddah_penthouse_renovation_1791682649664.jpg',
-  commercialOfficeClear: '/src/assets/images/jeddah_corniche_office_tower_1791684199865.jpg',
-  recyclingCenter: '/src/assets/images/vision_2030_circular_facility_1791682660217.jpg',
-  majlisWhiteGlove: '/src/assets/images/white_glove_majlis_clearance_1791682626425.jpg',
-  daylightDynaTruck: '/src/assets/images/jeddah_junk_removal_hero_1791683406052.jpg',
-  daylightSofaHaul: '/src/assets/images/jeddah_furniture_mattress_haul_1791683416167.jpg',
+  jeddahHeroTruck: jeddahHeroTruckImg,
+  furnitureMattressHaul: furnitureMattressHaulImg,
+  applianceAcRemoval: applianceAcRemovalImg,
+  rooftopGarageCleanout: rooftopGarageCleanoutImg,
+  jeddahPenthouseDebris: jeddahPenthouseDebrisImg,
+  commercialOfficeClear: commercialOfficeClearImg,
+  recyclingCenter: recyclingCenterImg,
+  majlisWhiteGlove: majlisWhiteGloveImg,
+  daylightDynaTruck: daylightDynaTruckImg,
+  daylightSofaHaul: daylightSofaHaulImg,
 };
 
 export interface PageMeta {

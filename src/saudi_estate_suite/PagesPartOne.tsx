@@ -39,6 +39,10 @@ export const ResilientImage: React.FC<ResilientImageProps> = ({
 }) => {
   const [hasError, setHasError] = useState(false);
 
+  useEffect(() => {
+    setHasError(false);
+  }, [src]);
+
   if (hasError) {
     return (
       <div
@@ -58,7 +62,7 @@ export const ResilientImage: React.FC<ResilientImageProps> = ({
     <img
       src={src}
       alt={alt}
-      referrerPolicy="no-referrer"
+      loading="eager"
       onError={() => setHasError(true)}
       className={className}
     />
@@ -192,8 +196,8 @@ export const Page01HomeJeddah: React.FC<HomeProps> = ({
                 <div className="flex flex-wrap items-center gap-2 text-xs font-medium text-slate-300">
                   <span className="text-emerald-400 font-semibold">
                     {isAr
-                      ? 'جدة · خدمة VIP لإزالة الأثاث والمخلفات'
-                      : 'Jeddah, Saudi Arabia · 60-Min Express Fleet'}
+                      ? 'Jeddah Junk Removal · جدة لإزالة الأثاث والمخلفات'
+                      : 'Jeddah Junk Removal · 60-Min Express Fleet'}
                   </span>
                   <span aria-hidden="true">·</span>
                   <span>
@@ -208,8 +212,8 @@ export const Page01HomeJeddah: React.FC<HomeProps> = ({
                   style={{ fontSize: 'clamp(2.25rem, 3.6vw, 3.5rem)' }}
                 >
                   {isAr
-                    ? 'الجيل الجديد لإزالة الأثاث القديم والمخلفات في جدة — فك وتحميل فوري خلال 60 دقيقة.'
-                    : 'Jeddah’s Premier Same-Day Junk Removal & Villa Cleanout Fleet.'}
+                    ? 'Jeddah Junk Removal — إزالة الأثاث القديم والمخلفات في جدة خلال 60 دقيقة.'
+                    : 'Jeddah Junk Removal — Same-Day Furniture & Villa Cleanout Fleet.'}
                 </h1>
 
                 <p className="text-base text-slate-300 leading-relaxed max-w-[60ch]">

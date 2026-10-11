@@ -479,11 +479,11 @@ export const SaudiEstateSuite: React.FC = () => {
             <div className="lg:col-span-4 space-y-3">
               <div className="font-serif-display text-2xl font-extrabold text-white">
                 {isAr
-                  ? 'شركة جدة لإزالة الأثاث القديم والمخلفات'
-                  : 'Jeddah Junk Removal & Hauling'}
+                  ? 'Jeddah Junk Removal · جدة لإزالة الأثاث والمخلفات'
+                  : 'Jeddah Junk Removal'}
               </div>
               <p className="text-xs text-slate-400 leading-relaxed max-w-sm">
-                Jeddah’s #1 same-day junk removal, old furniture pickup, broken appliance hauling, Sateh rooftop cleanouts, and Amanah-permitted renovation rubbish removal.
+                Jeddah Junk Removal — Jeddah’s #1 same-day junk removal, old furniture pickup, broken appliance hauling, Sateh rooftop cleanouts, and Amanah-permitted renovation rubbish removal.
               </p>
               <div className="flex flex-wrap items-center gap-2.5 pt-2">
                 <a
@@ -538,7 +538,7 @@ export const SaudiEstateSuite: React.FC = () => {
 
           <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
             <div>
-              © {new Date().getFullYear()} Jeddah Junk Removal & Old Furniture Hauling (Jeddah, KSA) · {JEDDAH_PHONE_LOCAL}.
+              © {new Date().getFullYear()} Jeddah Junk Removal (Jeddah, Saudi Arabia) · {JEDDAH_PHONE_LOCAL}.
             </div>
             <div className="flex flex-wrap items-center gap-3">
               <span>Jeddah Amanah Permitted</span>
